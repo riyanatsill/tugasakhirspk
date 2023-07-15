@@ -13,9 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -35,7 +33,8 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Kelompok UTA</sup></div>
+                <div class="sidebar-brand-text mx-3">Kelompok UTA</sup>
+                </div>
             </a>
 
             <!-- Divider -->
@@ -84,39 +83,66 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <h1 class="h1 mb-4 text-gray-800">ISI DATA</h1>
-                    <form class="user">
-                        <div class="form-group">
+                    <form class="user" id="form">
+                        <div class="form-group" id="divKandidat">
                             <h4>KANDIDAT</h4>
-                            <input type="text" class="form-control form-control-user" id="kode" placeholder="Kandidat">
+                            <input type="text" class="form-control form-control-user nilai-input" id="kandidat1" placeholder="Kandidat">
+                            <br>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-user" id="kode" placeholder="Kandidat 2">
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                            <h4>KATEGORI-1</h4>
-                            <input type="text" class="form-control form-control-user" id="sks" placeholder="isi">
+                        <div class="form-group row" id="divKategori">
+                            <div class="col-sm-6 mb-3 mb-sm-0" id="divKategori">
+                                <h4>KATEGORI-1</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="kategori1" placeholder="isi">
                             </div>
-                            <div class="col-sm-6">
-                            <h4>BOBOT KATEGORI</h4>
-                                <input type="number" class="form-control form-control-user" id="nama" placeholder="isi">
+                            <div class="col-sm-6" id="divBobot">
+                                <h4>BOBOT KATEGORI</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="bobotKategori1" placeholder="isi">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group row" id="divKategori">
+                            <div class="col-sm-6 mb-3 mb-sm-0" id="divKategori">
+                                <h4>KATEGORI-2</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="kategori2" placeholder="isi">
+                            </div>
+                            <div class="col-sm-6" id="divBobot">
+                                <h4>BOBOT KATEGORI-2</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="bobotKategori2" placeholder="isi">
+                            </div>
+                        </div>
+                        <div class="form-group row" id="divKategori">
+                            <div class="col-sm-6 mb-3 mb-sm-0" id="divKategori">
+                                <h4>KATEGORI-3</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="kategori3" placeholder="isi">
+                            </div>
+                            <div class="col-sm-6" id="divBobot">
+                                <h4>BOBOT KATEGORI-3</h4>
+                                <input type="text" class="form-control form-control-user nilai-input" id="bobotKategori3" placeholder="isi">
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="form-group" id="divNilaiKategoriKandidat">
                             <h4>Nilai KATEGORI KANDIDAT-1</h4>
-                            <input type="number" class="form-control form-control-user" id="sks" placeholder="Kategori 1">
+                            <div class=" col-12 row">
+                                <div class="col-4">
+                                    <input type="number" class="form-control form-control-user nilai-input" id="nilaiKat1Kan1" placeholder="Kategori 1">
+                                    <br>
+                                </div>
+                                <div class="col-4">
+                                    <input type="number" class="form-control form-control-user nilai-input" id="nilaiKat2Kan1" placeholder="Kategori 2">
+                                    <br>
+                                </div>
+                                <div class="col-4">
+                                    <input type="number" class="form-control form-control-user nilai-input" id="nilaiKat3Kan1" placeholder="Kategori 3">
+                                    <br>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <h4>Nilai KATEGORI KANDIDAT-2</h4>
-                            <input type="number" class="form-control form-control-user" id="sks" placeholder="isi">
-                        </div>
-                         <input type="button" value="TAMBAH KANDIDAT" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block;max-width: 30%;" />
-                         <br>
-                         <input type="button" value="TAMBAH KATEGORI" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block; max-width: 30%;" />
-                         <br>
-                         <input type="button" value="Save" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block;max-width: 30%;" />
+                        <input type="button" value="TAMBAH KANDIDAT" id="tambahKandidat" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block;max-width: 30%;" />
+                        <br>
+                        <input type="submit" value="Save" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block;max-width: 30%;" />
                     </form>
-<br>
+                    <br>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -126,29 +152,33 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">KANDIDAT</th>
-                                        <th scope="col">KATEGORI-1</th>
-                                        <th scope="col">KATEGORI-2</th>
-                                      </tr>
+                                    <thead id="tableProses">
+                                        <tr>
+                                            <th scope="col">KANDIDAT</th>
+                                            <th scope="col" id="kate1"></th>
+                                            <th scope="col" id="kate2"></th>
+                                            <th scope="col" id="kate3"></th>
+                                            <th scope="col">JUMLAH NILAI KATEGORI</th>
+                                        </tr>
                                     </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>-</td>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>-</td>
-                                        <td>-</td>
-                                    </tbody>
-                                  </table>
+                                    <!-- <tbody id="tableProses">
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody> -->
+                                </table>
                             </div>
                         </div>
                     </div>
-                    
+                    <div id="tampil">
+                        <input type="button" value="TAMPILKAN PEMENANG" id="tampilkan" class="btn btn-primary btn-user btn-block" style="margin: 0 auto; display: block;max-width: 30%;" />
+                        <br>
+                    </div>
+
                     <!-- Footer -->
                     <footer class="sticky-footer bg-white">
                         <div class="container my-auto">
@@ -169,8 +199,7 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -204,6 +233,8 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="js/UTA.js"></script>
 
 </body>
 
