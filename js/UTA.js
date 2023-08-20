@@ -216,7 +216,3 @@ document.addEventListener("DOMContentLoaded", function() {
         divKandidat.appendChild(br);
     }
 });
-
-//commenting arya
-
-//commenting riyan
