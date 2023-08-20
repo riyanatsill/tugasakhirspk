@@ -216,3 +216,5 @@ document.addEventListener("DOMContentLoaded", function() {
         divKandidat.appendChild(br);
     }
 });
+
+//commenting riyan
